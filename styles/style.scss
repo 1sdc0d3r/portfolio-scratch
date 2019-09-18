@@ -1,3 +1,20 @@
+@mixin imgSize {
+  height: 100px;
+  width: auto;
+}
+
 html {
   background-color: rgb(31, 155, 124);
+}
+#groupImg {
+  @include imgSize();
+}
+#paulFenceImg {
+  @include imgSize();
+}
+#tacosImg {
+  @include imgSize();
+}
+#coffeeImg {
+  @include imgSize();
 }
