@@ -2,10 +2,36 @@
   height: 100px;
   width: auto;
 }
+// @mixin flexCenter {
+//   height: 1rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 html {
   background-color: rgb(31, 155, 124);
+
+  header {
+    color: rgb(156, 74, 20);
+
+    content {
+      color: black;
+    }
+    nav {
+      color: blueviolet;
+      font-size: 1.125rem;
+      //removes bullet points
+      list-style-type: none;
+
+      ul {
+        text-decoration: none;
+        display: inline;
+      }
+    }
+  }
 }
+
 #groupImg {
   @include imgSize();
 }

@@ -2,6 +2,25 @@ html {
   background-color: #1f9b7c;
 }
 
+html header {
+  color: #9c4a14;
+}
+
+html header content {
+  color: black;
+}
+
+html header nav {
+  color: blueviolet;
+  font-size: 1.125rem;
+  list-style-type: none;
+}
+
+html header nav ul {
+  text-decoration: none;
+  display: inline;
+}
+
 #groupImg {
   height: 100px;
   width: auto;
