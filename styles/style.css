@@ -1,5 +1,7 @@
 html {
   background-color: #1f9b7c;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html body header {
@@ -52,11 +54,6 @@ html body header nav ul li a {
           justify-content: center;
 }
 
-html body #about {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html body #about h2 {
   color: #f37272;
   -webkit-box-pack: center;
@@ -86,27 +83,36 @@ html body #about .aboutTxt #mePic {
 }
 
 html body #projects {
-  color: salmon;
-  text-decoration: underline;
+  width: 100%;
   text-align: center;
 }
 
-#groupImg {
-  height: 100px;
-  width: auto;
+html body #projects h2 {
+  color: #af3b2e;
+  text-decoration: underline;
 }
 
-#paulFenceImg {
-  height: 100px;
-  width: auto;
+html body #projects ul {
+  color: rgba(255, 0, 85, 0.541);
+  list-style-type: none;
+  width: 250px;
+  border: 1px white solid;
 }
 
-#tacosImg {
-  height: 100px;
-  width: auto;
+html body #projects ul li {
+  border: 6px rgba(168, 20, 20, 0.658) double;
+  border-radius: 12px;
+  padding: 7px;
+  margin: 10px;
+  text-justify: center;
+  display: inline-block;
 }
 
-#coffeeImg {
+html body .funPhotos h2 {
+  color: mediumorchid;
+}
+
+html body .funPhotos img {
   height: 100px;
   width: auto;
 }

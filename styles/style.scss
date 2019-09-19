@@ -11,6 +11,7 @@
 
 html {
   background-color: rgb(31, 155, 124);
+  box-sizing: border-box;
   body {
     header {
       color: rgb(156, 74, 20);
@@ -59,7 +60,6 @@ html {
     }
 
     #about {
-      box-sizing: border-box;
       // background-color: fuchsia;
       h2 {
         color: rgb(243, 114, 114);
@@ -89,22 +89,48 @@ html {
       }
     }
     #projects {
-      color: salmon;
-      text-decoration: underline;
+      width: 100%;
       text-align: center;
+      h2 {
+        color: rgb(175, 59, 46);
+        text-decoration: underline;
+      }
+      ul {
+        color: rgba(255, 0, 85, 0.541);
+        list-style-type: none;
+        width: 250px;
+        border: 1px white solid;
+
+        li {
+          border: 6px rgba(168, 20, 20, 0.658) double;
+          border-radius: 12px;
+          padding: 7px;
+          margin: 10px;
+          text-justify: center;
+          display: inline-block;
+        }
+      }
+    }
+    .funPhotos {
+      h2 {
+        color: mediumorchid;
+      }
+      img {
+        @include imgSize();
+      }
     }
   }
 }
 
-#groupImg {
-  @include imgSize();
-}
-#paulFenceImg {
-  @include imgSize();
-}
-#tacosImg {
-  @include imgSize();
-}
-#coffeeImg {
-  @include imgSize();
-}
+// #groupImg {
+//   @include imgSize();
+// }
+// #paulFenceImg {
+//   @include imgSize();
+// }
+// #tacosImg {
+//   @include imgSize();
+// }
+// #coffeeImg {
+//   @include imgSize();
+// }
