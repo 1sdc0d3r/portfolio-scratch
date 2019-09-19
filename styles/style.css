@@ -2,23 +2,83 @@ html {
   background-color: #1f9b7c;
 }
 
-html header {
+html body header {
   color: #9c4a14;
 }
 
-html header content {
+html body header h1 {
+  text-align: center;
+  border: brown dotted 1.2px;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 10px;
+}
+
+html body header .content {
   color: black;
 }
 
-html header nav {
-  color: blueviolet;
-  font-size: 1.125rem;
-  list-style-type: none;
+html body header nav ul {
+  display: flexbox;
+  border: 1.25px solid red;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: royalblue;
 }
 
-html header nav ul {
-  text-decoration: none;
+html body header nav ul li {
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  list-style-type: none;
   display: inline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body header nav ul li a {
+  color: cyan;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #about h2 {
+  color: #f37272;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin: 15px;
+  text-decoration: underline;
+}
+
+html body #about .aboutTxt {
+  color: rgba(247, 247, 34, 0.89);
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  background-color: green;
+  border: dashed black 2px;
+}
+
+html body #about .aboutTxt img {
+  height: 150px;
+  width: auto;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0.8rem;
 }
 
 #groupImg {

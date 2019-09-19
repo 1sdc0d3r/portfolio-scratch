@@ -11,22 +11,80 @@
 
 html {
   background-color: rgb(31, 155, 124);
+  body {
+    header {
+      color: rgb(156, 74, 20);
+      h1 {
+        text-align: center;
+        border: brown dotted 1.2px;
+        border-radius: 7px;
+        padding: 5px;
+        margin: 10px;
+      }
+      .content {
+        color: black;
+      }
 
-  header {
-    color: rgb(156, 74, 20);
+      nav {
+        ul {
+          display: flexbox;
+          border: 1.25px solid red;
+          border-radius: 15px;
+          padding: 5px;
+          margin: 10px;
+          text-align: center;
+          justify-content: center;
+          background-color: royalblue;
 
-    content {
-      color: black;
+          li {
+            font-size: 1.125rem;
+            letter-spacing: 2px;
+            list-style-type: none; //removes bullet points
+            display: inline;
+            justify-content: space-between;
+            // background-color: red;
+
+            a {
+              color: cyan;
+              // background-color: red;
+              text-decoration: none;
+              padding: 5px;
+              margin: 10px;
+              text-align: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
     }
-    nav {
-      color: blueviolet;
-      font-size: 1.125rem;
-      //removes bullet points
-      list-style-type: none;
 
-      ul {
-        text-decoration: none;
-        display: inline;
+    #about {
+      // background-color: fuchsia;
+      h2 {
+        color: rgb(243, 114, 114);
+        // background-color: fuchsia;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        margin: 15px;
+        text-decoration: underline;
+      }
+
+      .aboutTxt {
+        color: rgba(247, 247, 34, 0.89);
+        padding: 10px;
+        margin: 10px;
+        text-align: left;
+        background-color: green;
+        border: dashed black 2px;
+
+        img {
+          height: 150px;
+          width: auto;
+          float: left;
+          box-sizing: border-box;
+          margin: 0.8rem;
+        }
       }
     }
   }
