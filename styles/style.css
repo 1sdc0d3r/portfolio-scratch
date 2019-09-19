@@ -52,6 +52,11 @@ html body header nav ul li a {
           justify-content: center;
 }
 
+html body #about {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html body #about h2 {
   color: #f37272;
   -webkit-box-pack: center;
@@ -59,7 +64,7 @@ html body #about h2 {
           justify-content: center;
   text-align: center;
   padding: 5px;
-  margin: 15px;
+  margin: 10px;
   text-decoration: underline;
 }
 
@@ -67,18 +72,23 @@ html body #about .aboutTxt {
   color: rgba(247, 247, 34, 0.89);
   padding: 10px;
   margin: 10px;
-  text-align: left;
+  text-align: center;
   background-color: green;
   border: dashed black 2px;
+  overflow: hidden;
 }
 
-html body #about .aboutTxt img {
+html body #about .aboutTxt #mePic {
   height: 150px;
   width: auto;
-  float: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0.8rem;
+  float: right;
+  margin: 10px;
+}
+
+html body #projects {
+  color: salmon;
+  text-decoration: underline;
+  text-align: center;
 }
 
 #groupImg {

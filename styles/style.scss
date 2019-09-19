@@ -59,6 +59,7 @@ html {
     }
 
     #about {
+      box-sizing: border-box;
       // background-color: fuchsia;
       h2 {
         color: rgb(243, 114, 114);
@@ -66,7 +67,7 @@ html {
         justify-content: center;
         text-align: center;
         padding: 5px;
-        margin: 15px;
+        margin: 10px;
         text-decoration: underline;
       }
 
@@ -74,18 +75,23 @@ html {
         color: rgba(247, 247, 34, 0.89);
         padding: 10px;
         margin: 10px;
-        text-align: left;
+        text-align: center;
         background-color: green;
         border: dashed black 2px;
+        overflow: hidden;
 
-        img {
+        #mePic {
           height: 150px;
           width: auto;
-          float: left;
-          box-sizing: border-box;
-          margin: 0.8rem;
+          float: right;
+          margin: 10px;
         }
       }
+    }
+    #projects {
+      color: salmon;
+      text-decoration: underline;
+      text-align: center;
     }
   }
 }
