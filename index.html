@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Braden's Portfolio</title>
+    <title>Portfolio</title>
     <Link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body class="wrapper">
+  <body>
     <header id="header">
       <h1>Braden's Portfolio</h1>
-      <!-- <div class="content">
+      <div class="content">
         <p>
           This portfolio is my work that I have done as a Lambda School Student.
           I hope to learn more and become a great programmer.
         </p>
-      </div> -->
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#funPhotos">Fun Photos</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
+      <!-- <div> -->
+        <!-- add style for hover for nav -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#funPhotos">Fun Photos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- </div> -->
     </header>
 
     <div id="about">
@@ -65,56 +66,59 @@
 
     <div class="funPhotos">
       <h2>Fun Photos</h2>
-      <img
-        id="groupImg"
-        src="images/group.jpg"
-        alt="Group"
-        title="Friends"
-        height="80"
-        width="auto"
-      />
-      <img
-        id="paulFenceImg"
-        src="images/paul-fence.jpg"
-        alt="paul"
-        title="Paul on fence"
-        height="80"
-        width="auto"
-      />
-      <img
-        id="tacosImg"
-        src="images/tacos.jpg"
-        alt="Salmon tacos"
-        title="TACOS!"
-      />
-      <img
-        id="coffeeImg"
-        src="images/coffee.jpg"
-        alt="Coding & Coffee"
-        title="Coffee"
-        height="80"
-        width="auto"
-      />
+      <div class="imgs">
+        <img
+          id="groupImg"
+          src="images/group.jpg"
+          alt="Group"
+          title="Friends"
+          height="80"
+          width="auto"
+        />
+        <img
+          id="paulFenceImg"
+          src="images/paul-fence.jpg"
+          alt="paul"
+          title="Paul on fence"
+          height="80"
+          width="auto"
+        />
+        <img
+          id="tacosImg"
+          src="images/tacos.jpg"
+          alt="Salmon tacos"
+          title="TACOS!"
+        />
+        <img
+          id="coffeeImg"
+          src="images/coffee.jpg"
+          alt="Coding & Coffee"
+          title="Coffee"
+          height="80"
+          width="auto"
+        />
+      </div>
     </div>
 
     <div id="contact">
       <h2>Contact Me</h2>
       <ul>
-        <li id="email">
-          email:
+        <li class="cont-list">
+          E-mail:
           <a href="mailto: bradenbellemail.com">bradenbellemail@gmail.com</a>
         </li>
-        <li id="facebook">
+        <li class="cont-list">
           Facebook:
           <a href="https://www.facebook.com/fish2355" target="_blank"
-            >Braden Bell</a
+            >facebooklogo</a
           >
         </li>
-        <li id="snapchat">
-          Snapchat:<a
-            href="https://www.snapchat.com/add/fishing-life1"
-            target="_blank"
-            ><img
+
+        <li id="snapchat" class="cont-list">
+          Snapchat:
+          <!-- <br /> -->
+          <a href="https://www.snapchat.com/add/fishing-life1" target="_blank">
+            <img
               src="images/snapcode.jpg"
               alt="fishing-life1"
               title="snapcode"
@@ -122,13 +126,13 @@
               height="40"
           /></a>
         </li>
-        <li id="instagram">
+        <li class="cont-list">
           Instagram:
           <a href="https://www.instagram.com/braden2355/" target="_blank"
-            >Braden Bell</a
+            >Braden2355</a
           >
         </li>
-        <li id="linkedIn">
+        <li class="cont-list">
           LinkedIn:
           <a
             href="https://www.linkedin.com/in/braden-bell-73b168165/"
@@ -136,15 +140,19 @@
             >Click Here</a
           >
         </li>
+        <li class="cont-list">
+          Github:
+          <a href="https://github.com/fish2355" target="_blank">fish2355</a>
+        </li>
       </ul>
-      <address>
+      <!-- <address>
         1234 coding way<br />
         Frankfurt, Washington 657358
-      </address>
+      </address> -->
     </div>
 
     <footer id="footer">
-      <span>&copy;BB</span>
+      <span>&copy;BB 2019</span>
     </footer>
   </body>
 </html>

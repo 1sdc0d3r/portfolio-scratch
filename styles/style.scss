@@ -1,6 +1,9 @@
 @mixin imgSize {
-  height: 100px;
+  height: 250px;
   width: auto;
+  margin: 0px;
+  padding: 5px;
+  border: orchid solid 2px;
 }
 // @mixin flexCenter {
 //   height: 1rem;
@@ -8,6 +11,9 @@
 //   justify-content: center;
 //   align-items: center;
 // }
+html {}
+html body {}
+
 
 html {
   background-color: rgb(31, 155, 124);
@@ -60,8 +66,11 @@ html {
     }
 
     #about {
-      // background-color: fuchsia;
+      background-color: fuchsia;
+      border: red 2px solid;
+    
       h2 {
+        
         color: rgb(243, 114, 114);
         // background-color: fuchsia;
         justify-content: center;
@@ -91,6 +100,8 @@ html {
     #projects {
       width: 100%;
       text-align: center;
+      border: white solid 1px;
+
       h2 {
         color: rgb(175, 59, 46);
         text-decoration: underline;
@@ -100,37 +111,111 @@ html {
         list-style-type: none;
         width: 250px;
         border: 1px white solid;
+        margin: auto;
 
         li {
+          display: inline-block;
           border: 6px rgba(168, 20, 20, 0.658) double;
           border-radius: 12px;
           padding: 7px;
           margin: 10px;
-          text-justify: center;
-          display: inline-block;
         }
       }
     }
     .funPhotos {
+      text-align: center;
+      width: 100%;
+
       h2 {
         color: mediumorchid;
+        text-align: center;
+        text-decoration: underline;
       }
-      img {
-        @include imgSize();
+
+      // FIX POSITIONING LATER!! (different screen-port sizes)
+      .imgs {
+        min-width: 625px;
+        max-width: 825px;
+        // border: red 3px dashed;
+
+        #groupImg {
+          @include imgSize();
+        }
+        #paulFenceImg {
+          @include imgSize();
+        }
+        #tacosImg {
+          @include imgSize();
+          // height: 200px;
+          // transform: rotateZ(90deg);
+        }
+        #coffeeImg {
+          @include imgSize();
+        }
       }
+    }
+    #contact {
+      border: 2px lightcyan solid;
+      width: 50%;
+      min-width: 312.5px;
+      max-width: none;
+      text-align: left;
+      h2 {
+        color: darkorchid;
+        text-decoration: underline;
+        // text-align: center;
+        border: solid 1px greenyellow;
+      }
+      ul {
+        list-style-type: none;
+        border: solid 1px greenyellow;
+        padding: 0px;
+        margin: 0px;
+
+        .cont-list {
+          text-align: left;
+          border: red solid 2px;
+          color: rgb(171, 78, 218);
+          font-size: 16px;
+
+          a {
+            color: rgb(199, 199, 15);
+            text-decoration: none;
+          }
+        }
+        #snapchat {
+          text-align: left;
+          border: red solid 2px;
+          a {
+            img {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    text-align: right;
+    padding-right: 1rem;
+    span {
+      color: darkgrey;
     }
   }
 }
 
-// #groupImg {
-//   @include imgSize();
+// #email {
 // }
-// #paulFenceImg {
-//   @include imgSize();
+// #facebook {
 // }
-// #tacosImg {
-//   @include imgSize();
+// #snapchat {
+//   a {
+//     img {
+//       margin: auto;
+//     }
+//   }
 // }
-// #coffeeImg {
-//   @include imgSize();
+// #instagram {
+// }
+// #linkedIn {
 // }
